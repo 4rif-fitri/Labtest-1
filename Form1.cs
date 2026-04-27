@@ -47,9 +47,9 @@ namespace WindowsFormsApp7
             double discount = checkBox1.Checked ? 0.15 : 0;
             string address = inpAddress.Text;
 
+            this.Visible = false;
             var form2 = new Form2(address, discount);
             form2.Show();
-            this.Close();
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
